@@ -10,7 +10,7 @@ Xiao Zheng, 2018212779, 190014607, jp2018212779@qmul.ac.uk
 
 Zhengying Hong, 2018212728, 190015648, jp2018212728@qmul.ac.uk
 
-Name, BUPT Student Number, QM Student Number, Email
+Yuhao Lu, 2018212751, 190015372, 895426760@qq.com
 
 Name, BUPT Student Number, QM Student Number, Email
 
