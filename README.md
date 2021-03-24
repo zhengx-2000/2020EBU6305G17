@@ -14,6 +14,6 @@ Yuhao Lu, 2018212751, 190015372, 895426760@qq.com
 
 Yishan Wei, 2018212730, 190015109, jp2018212730@qmul.ac.uk
 
-Name, BUPT Student Number, QM Student Number, Email
+Guanyu Xue, 2018212722, 190012902, 2529055249@qq.com
 
 ## Assigned TA: Yuxiao Cai
