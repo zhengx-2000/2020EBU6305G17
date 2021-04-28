@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <style>
-        
+        .main {
+            width: 370px;
+            height: 500px;
+            border: solid #333;
+            background-color: rgb(229,245,242);
+        }
+        .control {
+            width: 370px;
+            height: 32px;
+        }
+        .player {
+            width: 370px;
+            height: 110px;
+        }
+        .info {
+            width: 370px;
+            height: 149px;
+            background-color: blanchedalmond;
+        }
+        .title {
+            width: 370px;
+            height: 60px;
+            text-align: center;
+            font-family: "Arial";
+            color: #cf2a27;
+            font-size: 32px;
+
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            left: 5px;
+            top: 5px;
+            border: none;
+        }
+        button {
+            width: 32px;
+            height: 32px;
+            border: none;
+        }
+        button:focus {
+            outline: none;
+        }
     </style>
 </head>
 <body>
+    <div class="main">
+        <div class="control" id="top">
+            <img src="./images/heart_full.png">
+            <img src="./images/heart_full.png">
+            <img src="./images/heart_empty.png">
+            <button style="background: url(./images/pause.png); left: 185px; top: 5px; position: relative;
+                background-size: contain; text-align: center;" id="pause"></button>
+            <button style="background: url(./images/home.png); left: 185px; top: 5px; position: relative;
+                background-size: contain; text-align: center;" id="home"></button>
+        </div>
+
+        <div class="player">
+            <img src="./images/player/1.png" style="width: 58px; height: 73px;left: 115px; top: 37px;">
+        </div>
+
+        <canvas id="game" width="370" height="25">
+    
+        </canvas>
+
+        <div class="info">
+            <div class="title" id="middle">
+                <br />
+                ~~~Little Star~~~
+            </div>
+    
+            <canvas id="countdown" width="370" height="89">
+                
+            </canvas>
+        </div>
+        
+        <canvas id="note" width="370" height="176">
+    
+        </canvas>
+
+        <script>
+            var game = document.getElementById("game");
+            var gamectx = game.getContext("2d");
+            var countdown = document.getElementById("countdown");
+            var countdownctx = countdown.getContext("2d");
+            var note = document.getElementById("note");
+            var notectx = note.getContext("2d");
+            
+            drawPlayer(gamectx);
+            drawStairs(gamectx);
+            drawNotes(gamectx);
+
+            drawCountdown(countdownctx);
+
+            drawBlock(notectx);
+            drawContain(notectx);
+            drawNumber(notectx);
+
+            function drawPlayer(ctx) {
+                ctx.fillStyle = "#333";
+            }
+
+            function drawStairs(ctx) {
+                ctx.fillStyle = "#666";
+                for(var i=1; i<=12; i++) {
+                    ctx.strokeRect((3*i-2)*10, 0, 20, 15);
+                    if(i<=5) {
+                        ctx.fillRect((3*i-2)*10, 0, 20, 15);
+                    }
+                }
+            }
+
+            function drawNotes(ctx) {
+                ctx.fillStyle = "blue";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.font = "16px bold Arial";
+                for(var i=1; i<=12; i++) {
+                    ctx.fillText("5", i*30-10, 8.5);
+                }
+            }
+
+            function drawCountdown(ctx) {
+                ctx.fillStyle = "#333";
+                //ctx.textAlign = "center";
+                //ctx.textBaseline = "middle";
+                //ctx.font = "40px bold Arial";
+                //ctx.fillText("Time:", 20, 46);
+                ctx.strokeRect(40, 62, 290, 10);
+                ctx.fillRect(40, 62, 150, 10);
+            }
+
+            function drawBlock(ctx) {
+                ctx.fillStyle = "#333";
+                for(var i=1; i<8; i++) {
+                    ctx.strokeRect((2*i-1)*23.7+7, 10, 23.7, 151);
+                }
+            }
+
+            function drawContain(ctx) {
+                ctx.fillStyle = "#EEE";
+                for(var i=1; i<8; i++) {
+                    ctx.fillRect((2*i-1)*23.7+7, 10, 23.7, 151);
+                }
+            }
+
+            function drawNumber(ctx) {
+                ctx.fillStyle = "#333";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.font = "18px bold Arial";
+                for(var i=1; i<8; i++) {
+                    ctx.fillText(i.toString(), (2*i-0.5)*23.7+7, 85.5);
+                }
+            }
+        </script>
+    </div>
     
 </body>
 </html>

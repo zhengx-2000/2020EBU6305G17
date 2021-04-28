@@ -12,9 +12,12 @@
             width: 70px;
             height: 32px;
             position: relative;
-            left: 300px;
+            left: 295px;
             top: 5px;
-
+        }
+        .player {
+            width: 370px;
+            height: 110px;
         }
         .info {
             width: 370px;
@@ -43,11 +46,18 @@
 <body>
     <div class="main">
         <div class="control" id="top">
-            <button style="background: url(images/pause.png); background-size: contain;" onclick="buttonPressed(this.id)" id="pause"></button>
-            <button style="background: url(images/home.png); background-size: contain;" onclick="buttonPressed(this.id)" id="home"></button>
+            <button style="background: url(images/pause.png); background-size: contain;"
+                onclick="buttonPressed(this.id)" id="pause"></button>
+            <button style="background: url(images/home.png); background-size: contain;"
+                onclick="buttonPressed(this.id)" id="home"></button>
         </div>
 
-        <canvas id="game" width="370" height="135">
+        <div class="player">
+            <img src="./images/player/1.png" style="width: 58px; height: 73px;
+                position: relative; text-align: center; left: 115px; top: 37px;">
+        </div>
+
+        <canvas id="game" width="370" height="25">
     
         </canvas>
 
@@ -90,9 +100,9 @@
             function drawStairs(ctx) {
                 ctx.fillStyle = "#666";
                 for(var i=1; i<=12; i++) {
-                    ctx.strokeRect((3*i-2)*10, 110, 20, 15);
+                    ctx.strokeRect((3*i-2)*10, 0, 20, 15);
                     if(i<=5) {
-                        ctx.fillRect((3*i-2)*10, 110, 20, 15);
+                        ctx.fillRect((3*i-2)*10, 0, 20, 15);
                     }
                 }
             }
@@ -103,8 +113,7 @@
                 ctx.textBaseline = "middle";
                 ctx.font = "16px bold Arial";
                 for(var i=1; i<=12; i++) {
-                    ctx.fillText("5", i*30-10, 120);
-                    ctx.strokeRect((3*i-2)*10, 110, 20, 15);
+                    ctx.fillText("5", i*30-10, 8.5);
                 }
             }
 
