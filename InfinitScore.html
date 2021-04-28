@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOLD UP! PIANIST!</title>
+        <style>
+            .background{
+                width: 370px;
+                height: 500px;
+                background-image: url("images/background.jpg");
+                background-size: 100%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(255, 0, 0);
+                position:absolute;
+                text-align: center;
+                line-height: 113px;
+            }
+
+            .scoreBox{
+                background-color:rgb(190, 245, 235);
+                border:5px solid rgb(10, 165, 126);
+                width: 110px;
+                height:110px;
+                top: 370px;
+                left: 125px;
+                position:absolute;
+                text-align: center;
+                line-height: 100px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 50px;
+                color: rgb(255, 17, 0);
+
+            }
+
+            .boy{
+                width: 100px;
+                height: 150px;
+                background-image: url("images/boy.png");
+                background-size: 100%;
+                position: absolute;
+                top: 135px;
+                left: 130px;
+            }
+
+            .crown{
+                width: 80px;
+                height: 68px;
+                background-image: url("images/crown.png");
+                background-size: 100%;
+                position: absolute;
+                top: 90px;
+                left: 110px;
+            }
+
+            button{
+                transform: translateY(4px);
+                box-shadow: rgb(153, 118, 30);
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                border: none;
+                background-size: 100%;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+            <div class="background">
+                <p style="font-size: 50px;"><br><br>SCORE</p>
+                <div class="scoreBox">80</div>
+                <div class="boy"></div>
+                <div class="crown"></div>
+                <button style="background-image: url(images/backButton.png);background-size: contain;"></button>
+            </div>
+
+        
+        
+    </body>
+</html>
