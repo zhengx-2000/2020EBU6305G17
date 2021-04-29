@@ -2,7 +2,7 @@
 
 ## Group Number: 2020EBU6305G17
 
-## Project Title: XXXXXXXXXXXXXXXX
+## Project Title: Hold Up! Pianist!
 
 ## Members:
 
