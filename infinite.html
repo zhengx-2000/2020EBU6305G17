@@ -6,17 +6,17 @@
 <body>
     <div class="main">
         <div class="control" id="top">
-            <img src="./images/heart_full.png">
-            <img src="./images/heart_full.png">
-            <img src="./images/heart_empty.png">
-            <button style="background: url(./images/pause.png); left: 185px; top: 5px; position: relative;
+            <img class="heart" src="./images/heart_full.png">
+            <img class="heart" src="./images/heart_full.png">
+            <img class="heart" src="./images/heart_empty.png">
+            <button class="button" style="background: url(./images/pause.png); left: 185px; top: 5px; position: relative;
                 background-size: contain; text-align: center;" id="pause"></button>
-            <button style="background: url(./images/home.png); left: 185px; top: 5px; position: relative;
+            <button class="button" style="background: url(./images/home.png); left: 185px; top: 5px; position: relative;
                 background-size: contain; text-align: center;" id="home"></button>
         </div>
 
         <div class="player">
-            <img src="./images/player/1.png" style="width: 58px; height: 73px;left: 115px; top: 37px;">
+            <img class="boy" src="./images/player/1.png">
         </div>
 
         <canvas id="game" width="370" height="25"></canvas>
@@ -30,7 +30,13 @@
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         
-        <canvas id="note" width="370" height="176"></canvas>   
+        <button class="key" id="1">1</button>
+        <button class="key" id="2">2</button>
+        <button class="key" id="3">3</button>
+        <button class="key" id="4">4</button>
+        <button class="key" id="5">5</button>
+        <button class="key" id="6">6</button>
+        <button class="key" id="7">7</button>  
     </div>
     <script src="js/Infinite_drawframe.js"></script>
 </body>

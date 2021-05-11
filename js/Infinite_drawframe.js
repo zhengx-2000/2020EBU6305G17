@@ -2,18 +2,12 @@ var game = document.getElementById("game");
 var gamectx = game.getContext("2d");
 var countdown = document.getElementById("countdown");
 var countdownctx = countdown.getContext("2d");
-var note = document.getElementById("note");
-var notectx = note.getContext("2d");
             
 drawPlayer(gamectx);
 drawStairs(gamectx);
 drawNotes(gamectx);
 
 drawCountdown(countdownctx);
-
-drawBlock(notectx);
-drawContain(notectx);
-drawNumber(notectx);
 
 function drawPlayer(ctx) {
     ctx.fillStyle = "#333";
@@ -47,28 +41,4 @@ function drawCountdown(ctx) {
     //ctx.fillText("Time:", 20, 46);
     ctx.strokeRect(40, 62, 290, 10);
     ctx.fillRect(40, 62, 150, 10);
-}
-
-function drawBlock(ctx) {
-    ctx.fillStyle = "#333";
-    for(var i=1; i<8; i++) {
-        ctx.strokeRect((2*i-1)*23.7+7, 10, 23.7, 151);
-    }
-}
-
-function drawContain(ctx) {
-    ctx.fillStyle = "#EEE";
-    for(var i=1; i<8; i++) {
-        ctx.fillRect((2*i-1)*23.7+7, 10, 23.7, 151);
-    }
-}
-
-function drawNumber(ctx) {
-    ctx.fillStyle = "#333";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.font = "18px bold Arial";
-    for(var i=1; i<8; i++) {
-        ctx.fillText(i.toString(), (2*i-0.5)*23.7+7, 85.5);
-    }
 }

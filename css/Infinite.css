@@ -32,7 +32,7 @@ html,body {
     font-size: 32px;
 
 }
-img {
+.heart {
     width: 32px;
     height: 32px;
     position: relative;
@@ -40,14 +40,33 @@ img {
     top: 5px;
     border: none;
 }
-button {
+.boy {
+    position: relative;
+    width: 58px;
+    height: 73px;
+    left: 115px;
+    top: 37px;
+}
+.button {
     width: 32px;
     height: 32px;
     border: none;
+    cursor: pointer;
+}
+.key {
+    background-color: #e7e7e7;
+    color: black;
+    padding: 50px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
 }
 button:focus {
     outline: none;
 }
-button:active{
+.button:active{
     transform: translateY(4px);
 }
