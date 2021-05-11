@@ -6,9 +6,9 @@
 <body>
     <div class="main">
         <div class="control" id="top">
-            <button style="background: url(images/pause.png); background-size: contain;"
+            <button class="button" style="background: url(images/pause.png); background-size: contain;"
                 onclick="buttonPressed(this.id)" id="pause"></button>
-            <button style="background: url(images/home.png); background-size: contain;"
+            <button class="button" style="background: url(images/home.png); background-size: contain;"
                 onclick="buttonPressed(this.id)" id="home"></button>
         </div>
 
@@ -27,7 +27,13 @@
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         
-        <canvas id="note" width="370" height="176"></canvas>
+        <button class="key" id="1">1</button>
+        <button class="key" id="2">2</button>
+        <button class="key" id="3">3</button>
+        <button class="key" id="4">4</button>
+        <button class="key" id="5">5</button>
+        <button class="key" id="6">6</button>
+        <button class="key" id="7">7</button>
     </div>
 
     <script src="js/Classic_drawframe.js"></script>
