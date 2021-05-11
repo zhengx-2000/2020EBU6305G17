@@ -2,50 +2,13 @@
 <html>
     <head>
         <title>Win</title>
-        <style>
-           .background{
-            width: 370px;
-                height: 500px;
-                background-image: url("images/back.jpg");
-                background-size: 100%;
-           }
-           .win{
-               width: 370px;
-               height: 90px;
-               top: 15px;
-               text-align: center;
-               line-height: 80px;
-               font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-               font-size: 40px;
-               color: rgb(243, 97, 0);
-           }
-           .boy{
-                width: 100px;
-                height: 150px;
-                background-image: url("images/boy.png");
-                background-size: 100%;
-                position: relative;
-                top: 80px;
-                left: 120px;
-            }
-            button{
-                transform: translateY(4px);
-                box-shadow: rgb(153, 118, 30);
-                width: 80px;
-                height: 30px;
-                border: none;
-                background-size: 100%;
-                position: relative;
-                top: 140px;
-                left: 130px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/ClassicWin.css">
     </head>
     <body>
       <div class="background">
-           <div class="win">You Win ! ! !</div>
-           <div class="boy"></div>
-           <button onclick="" style="background-image: url(images/gotoback.png);background-size: contain;"></button>
+            <div class="win">You Win ! ! !</div>
+            <img src="images/boy.png"  height="40%" >
+            <button onclick="" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
       </div>
     </body>
 </html>

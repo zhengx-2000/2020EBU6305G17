@@ -1,53 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Win</title>
-        <style>
-           .background{
-            width: 370px;
-                height: 500px;
-                background-image: url("images/back.jpg");
-                background-size: 100%;
-           }
-           .fail{
-               width: 370px;
-               height: 90px;
-               top: 15px;
-               text-align: center;
-               line-height: 80px;
-               font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-               font-size: 40px;
-               color: rgb(243, 97, 0);
-           }
-           .boy{
-                width: 200px;
-                height: 200px;
-                background-image: url("images/failcry.png");
-                background-size: 100%;
-                position: relative;
-                top: 50px;
-                left: 80px;
-            }
-            .button{
-                transform: translateY(4px);
-                box-shadow: rgb(153, 118, 30);
-                width: 80px;
-                height: 30px;
-                border: none;
-                background-size: 100%;
-                position: relative;
-                top: 140px;
-                left: 140px;
-                margin: 0 ;
-            }
-        </style>
+        <title>Fail</title>
+        <link rel="stylesheet" type="text/css" href="css/ClassicFail.css">
     </head>
     <body>
       <div class="background">
-           <div class="fail">You Fail ! ! !</div>
-           <div class="boy"></div>
-           <button class="button" value="Go Back" style=" background-image: url(images/gotoback.png);margin-right:20px ;background-size: contain;"></button>
-           <button class="button" style="background-image: url(images/tryagain.png); background-size: contain;"></button>
+          <button onclick="" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
+          <button onclick="" class="button"  style="background-image: url(images/tryagain.png); float:right; margin-right: 10px; background-size:contain;"></button>
+            <div class="fail">You Fail ! ! !</div>
+                 <img src="images/failcry.png"  height="70%" >
         </div>
     </body>
 </html>
