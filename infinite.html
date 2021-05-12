@@ -16,7 +16,8 @@
         </div>
 
         <div class="player">
-            <img class="boy" src="./images/player/1.png">
+            <img id="role" img class="boy"  src="./images/player/1.png" style="width: 58px; height: 73px;
+            position: relative; text-align: center; left: 115px; top: 37px;">
         </div>
 
         <canvas id="game" width="370" height="25"></canvas>
@@ -26,17 +27,22 @@
                 <br />
                 ~~~Little Star~~~
             </div>
+    
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         
-        <button class="key" id="1">1</button>
-        <button class="key" id="2">2</button>
-        <button class="key" id="3">3</button>
-        <button class="key" id="4">4</button>
-        <button class="key" id="5">5</button>
-        <button class="key" id="6">6</button>
-        <button class="key" id="7">7</button>  
+        <button class="key" id="1" onclick="check(this.id);checkstate(state)">1</button>
+        <button class="key" id="2" onclick="check(this.id);checkstate(state)">2</button>
+        <button class="key" id="3" onclick="check(this.id);checkstate(state)">3</button>
+        <button class="key" id="4" onclick="check(this.id);checkstate(state)">4</button>
+        <button class="key" id="5" onclick="check(this.id);checkstate(state)">5</button>
+        <button class="key" id="6" onclick="check(this.id);checkstate(state)">6</button>
+        <button class="key" id="7" onclick="check(this.id);checkstate(state)">7</button>  
     </div>
-    <script src="js/Infinite_drawframe.js"></script>
+
+    <script src="./js/scorelist.js"></script>
+    <script src="./js/Infinite_drawframe.js"></script>
+    <script src="./js/running.js"></script>
+    <script src="./js/game.js"></script>
 </body>
 </html>
