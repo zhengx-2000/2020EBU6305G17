@@ -6,12 +6,18 @@ function setsong(s) {
     song = s;
 }
 function checkstate(state) {
-    if(state == 1) {
-        change();
-    }
-    if(state == 2) {
-        change();
-        alert("Game win!");
+    switch(state) {
+        case 1:
+            change();
+            break;
+        case 2:
+            change();
+            alert("Game win!");
+            current = 0;
+            state = -1;
+            break;
+        default:
+            break;
     }
 }
 function check(id) {
