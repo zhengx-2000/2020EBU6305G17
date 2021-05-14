@@ -32,10 +32,8 @@ function change(content){
         document.getElementById("stop").value = "1";
     }
 }
-function redirection(){
-    // console.log("result is:"+ songNum)
-    // console.log("./test"+songNum+".html")
-    window.open("test"+songNum+".html");
-    // window.location.assign("./test"+songNum+".html")
+
+function classic(music) {
+    window.location.href = "classic.html?word=" + music;
 }
     
