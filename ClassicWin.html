@@ -6,10 +6,22 @@
         <link rel="stylesheet" type="text/css" href="css/ClassicWin.css">
     </head>
     <body>
+        <audio src="./music/buttonsound.mp3" id="music" controls="controls" preload="preload" hidden> </audio>
         <div class="background">
-            <button onclick="window.location.href='Songlist.html'" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
+            <button onclick="window.location.href='Songlist.html'; document.getElementById('music').play()" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
             <div class="win">You Win ! ! !</div>
             <img src="images/boy.png"  height="50%" >
         </div>
+        <script>
+            function playbg(m) {
+                var music = document.getElementById(m);
+                if(music.paused) {
+                    music.play();
+                }
+                else {
+                    music.pause();
+                }
+            }
+        </script>
       </body>
 </html>

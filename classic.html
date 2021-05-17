@@ -4,6 +4,14 @@
     <link rel="stylesheet" type="text/css" href="css/Classic.css">
 </head>
 <body>
+    <audio src="./pianokey/C.mp3" id="do" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/D.mp3" id="ri" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/E.mp3" id="mi" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/F.mp3" id="fa" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/G.mp3" id="so" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/A.mp3" id="la" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/B.mp3" id="xi" controls="controls"  hidden> </audio>
+
     <div class="main">
         <div class="control" id="top">
             <button class="button" style="background: url(images/pause.png); background-size: contain;"
@@ -27,13 +35,13 @@
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         
-        <button class="key" id="1" onclick="check(this.id);checkstate(state)">1</button>
-        <button class="key" id="2" onclick="check(this.id);checkstate(state)">2</button>
-        <button class="key" id="3" onclick="check(this.id);checkstate(state)">3</button>
-        <button class="key" id="4" onclick="check(this.id);checkstate(state)">4</button>
-        <button class="key" id="5" onclick="check(this.id);checkstate(state)">5</button>
-        <button class="key" id="6" onclick="check(this.id);checkstate(state)">6</button>
-        <button class="key" id="7" onclick="check(this.id);checkstate(state)">7</button>
+        <button class="key" id="1" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">1</button>
+        <button class="key" id="2" onclick="document.getElementById('ri').play();check(this.id);checkstate(state)">2</button>
+        <button class="key" id="3" onclick="document.getElementById('mi').play();check(this.id);checkstate(state)">3</button>
+        <button class="key" id="4" onclick="document.getElementById('fa').play();check(this.id);checkstate(state)">4</button>
+        <button class="key" id="5" onclick="document.getElementById('so').play();check(this.id);checkstate(state)">5</button>
+        <button class="key" id="6" onclick="document.getElementById('la').play();check(this.id);checkstate(state)">6</button>
+        <button class="key" id="7" onclick="document.getElementById('xi').play();check(this.id);checkstate(state)">7</button>
     </div>
 
     <script>
