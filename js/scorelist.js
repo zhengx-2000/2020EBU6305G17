@@ -7,4 +7,4 @@ var rainraingoaway = "53553553655344224425432311";
 var xiaoyushashasha = "535311111153532222225335356553321231";
 var songList = new Array(littlestar, apple, onelittlefinger,marryhadalittlelamb, fivelittlemonkeys, rainraingoaway, xiaoyushashasha);
 var songNameList = new Array("Little Star", "Apple", "One Little Finger", "Marry Had a Little Lamb", "Five Little Monkeys", "Rain Rain Go Away", "Xiao Yu Sha Sha Sha");
-var songLengthList = new Array(42, 29, 33, 26, 35, 26, 36);
+//var songLengthList = new Array(42, 29, 33, 26, 35, 26, 36);

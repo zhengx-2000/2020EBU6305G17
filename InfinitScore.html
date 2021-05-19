@@ -8,7 +8,7 @@
     <body>
         <div class="background">
             <div class="topBar">
-                <button onclick="window.location.href='Songlist.html'" class="button" style="background:url(images/back.png); background-size:contain;"></button>
+                <button onclick="window.location.href='Infinite.html'" class="button" style="background:url(images/back.png); background-size:contain;"></button>
                 <button onclick="window.location.href='FunctionSelect.html'" class="button" style="background:url(images/home.png); background-size:contain; float: right; margin-right: 20px;"></button>                    
             </div>
             <div class="contain">
@@ -16,7 +16,9 @@
                 <img src="images/player/1.png" height="200px" style="margin-top: -25px;">
             </div>
             <p style="font-size: 50px;">SCORE</p>
-            <div class="scoreBox">80</div>
+            <div id="result" class="scoreBox"></div>
         </div>  
+
+        <script src="./js/InfiniteScore.js"></script>
     </body>
 </html>

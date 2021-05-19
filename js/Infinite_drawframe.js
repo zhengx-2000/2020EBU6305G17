@@ -33,12 +33,12 @@ function drawNotes(ctx) {
     }
 }
 
-function drawCountdown(ctx) {
+function drawCountdown(ctx,countnub1) {
     ctx.fillStyle = "#333";
     //ctx.textAlign = "center";
     //ctx.textBaseline = "middle";
     //ctx.font = "40px bold Arial";
     //ctx.fillText("Time:", 20, 46);
-    ctx.strokeRect(40, 62, 290, 10);
-    ctx.fillRect(40, 62, 150, 10);
+    ctx.strokeRect(40, 62, 227, 10);
+    ctx.fillRect(40, 62, countnub1, 10);
 }
