@@ -19,6 +19,7 @@ function checkstate(state) {
             alert("Game win!");
             current = 0;
             state = -1;
+            window.location.href='ClassicWin.html';
             break;
         default:
             break;
