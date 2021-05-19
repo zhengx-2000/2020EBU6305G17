@@ -2,7 +2,8 @@ var game = document.getElementById("game");
 var gamectx = game.getContext("2d");
 var countdown = document.getElementById("countdown");
 var countdownctx = countdown.getContext("2d");
-var time = 2000;
+
+var time = 4000;
 var interval = 20;
 var progressBarlength = 221;
 var pass = 0;
