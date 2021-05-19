@@ -7,8 +7,12 @@ function setsong(s) {
 }
 function checkstate(state) {
     switch(state) {
+        case 0:
+            break;
         case 1:
             change();
+            counter();
+            reset();
             break;
         case 2:
             change();
@@ -22,16 +26,16 @@ function checkstate(state) {
 }
 function check(id) {
     if(id.toString() == song.charAt(current)) {
-        alert("1 + " + current);
+        //alert("1 + " + current);
         state = 1;
         current = current + 1;
         if(current == song.length) {
             state = 2;
-            alert("2 + " + current);
+            //alert("2 + " + current);
         }
     }
     else {
-        alert("0 + " + current);
+        //alert("0 + " + current);
         state = 0;
     }
 }
