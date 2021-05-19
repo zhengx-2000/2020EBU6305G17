@@ -4,6 +4,14 @@
     <link rel="stylesheet" type="text/css" href="css/Infinite.css">
 </head>
 <body>
+    <audio src="./pianokey/C.mp3" id="do" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/D.mp3" id="ri" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/E.mp3" id="mi" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/F.mp3" id="fa" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/G.mp3" id="so" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/A.mp3" id="la" controls="controls"  hidden> </audio>
+    <audio src="./pianokey/B.mp3" id="xi" controls="controls"  hidden> </audio>
+
     <div class="main">
         <div class="control" id="top">
             <img class="heart" id="heart1" src="./images/heart_full.png">
@@ -28,13 +36,13 @@
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         
-        <button class="key" id="1" style="background:url(images/key1.png); background-size:contain;" onclick="check(this.id);checkstate(state)">1</button>
-        <button class="key" id="2" style="background:url(images/key2.png); background-size:contain;" onclick="check(this.id);checkstate(state)">2</button>
-        <button class="key" id="3" style="background:url(images/key3.png); background-size:contain;" onclick="check(this.id);checkstate(state)">3</button>
-        <button class="key" id="4" style="background:url(images/key4.png); background-size:contain;" onclick="check(this.id);checkstate(state)">4</button>
-        <button class="key" id="5" style="background:url(images/key5.png); background-size:contain;" onclick="check(this.id);checkstate(state)">5</button>
-        <button class="key" id="6" style="background:url(images/key6.png); background-size:contain;" onclick="check(this.id);checkstate(state)">6</button>
-        <button class="key" id="7" style="background:url(images/key7.png); background-size:contain;" onclick="check(this.id);checkstate(state)">7</button>  
+        <button class="key" id="1" style="background:url(images/key1.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">1</button>
+        <button class="key" id="2" style="background:url(images/key2.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">2</button>
+        <button class="key" id="3" style="background:url(images/key3.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">3</button>
+        <button class="key" id="4" style="background:url(images/key4.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">4</button>
+        <button class="key" id="5" style="background:url(images/key5.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">5</button>
+        <button class="key" id="6" style="background:url(images/key6.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">6</button>
+        <button class="key" id="7" style="background:url(images/key7.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">7</button>  
     </div>
 
     <script src="./js/scorelist.js"></script>

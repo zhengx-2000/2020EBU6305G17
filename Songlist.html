@@ -8,9 +8,8 @@
 <body>
     <div class="main">
         <div class="top_bar">
-            <button id="back" class="button" style="background: url(images/back.png); background-size:contain;"></button>
+            <button onclick="window.location.href='FunctionSelect.html'" id="back" class="button" style="background: url(images/back.png); background-size:contain;"></button>
             <button onclick="window.location.href='FunctionSelect.html'" id="information" class="button" style="background:url(images/home.png);background-size:contain;float: right; margin-right: 20px;"></button>
-            
         </div>
         <div class="title">
             Select Music!
@@ -18,16 +17,20 @@
         <div class="div">
             <ul class="box">
                 <li></li>
-                <li>Merry Christmas</li>
                 <li>Little Star</li>
-                <li>Happy New Year</li>
-                <li>Two Tigers</li>
-                <li>Happy Birthday</li>
-                <li>Edelweiss</li>
+                <li>Apple</li>
+                <li>One Little Finger</li>
+                <li>Marry Had a Little Lamb</li>
+                <li>Five Little Monkeys</li>
+                <li>Rain Rain Go Away</li>
+                <li>Xiao Yu Sha Sha Sha</li>
             </ul>
         </div>
         <div>
-            <button class="select_button" onclick="classic('littlestar')">START</button>
+            <!-- <button class="select_button" onclick="classic('littlestar')">START</button> -->
+            <button class="select_button" onclick="classic()">START</button>
+      
+
         </div>
     </div>
     <script src="js/Songlist.js"></script>

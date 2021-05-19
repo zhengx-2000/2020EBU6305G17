@@ -1,10 +1,11 @@
-var current = 0;
+var currentNote = 0;
 var state = -1;//-1: initialize; 0: wrong key; 1: correct key; 2: game end(no more key)
-var song = "";
-setsong(littlestar);
-function setsong(s) {
-    song = s;
-}
+var songnum = window.location.href.split("=")[1];
+var song = songList[parseInt(songnum)-1];
+alert(song);
+
+document.getElementById("middle").innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
+
 function checkstate(state) {
     switch(state) {
         case 0:
@@ -17,7 +18,7 @@ function checkstate(state) {
         case 2:
             change();
             alert("Game win!");
-            current = 0;
+            currentNote = 0;
             state = -1;
             window.location.href='ClassicWin.html';
             break;
@@ -26,11 +27,11 @@ function checkstate(state) {
     }
 }
 function check(id) {
-    if(id.toString() == song.charAt(current)) {
+    if(id.toString() == song.charAt(currentNote)) {
         //alert("1 + " + current);
         state = 1;
-        current = current + 1;
-        if(current == song.length) {
+        currentNote = currentNote + 1;
+        if(currentNote == song.length) {
             state = 2;
             //alert("2 + " + current);
         }
