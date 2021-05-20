@@ -43,8 +43,6 @@ function drawCountdown(ctx, countnub1) {
     //ctx.textBaseline = "middle";
     //ctx.font = "40px bold Arial";
     //ctx.fillText("Time:", 20, 46);
-    //ctx.strokeRect(0, 70, 227*countdownFactor, 20);
-    //ctx.fillRect(0, 70, countnub1*countdownFactor, 20);
     ctx.strokeRect(0, 50, 227*countdownFactor, 20);
     ctx.fillRect(0, 50, countnub1*countdownFactor, 20);
 }
@@ -53,24 +51,6 @@ window.onresize = changeScreen;
 function changeScreen(){
     adjustCountdownLength();
 }
-
-/*window.onload = function() {
-    var canvas = document.createElement("canvas");
-    canvas.id = "canvas";
-    var box = document.getElementById("countdown");
-    box.appendChild(canvas);
-
-    document.getElementById("canvas").height = 89;
-    var w = window.innerWidth;
-    if(w<600)
-        document.getElementById("canvas").width = 230;
-    if(w>=600&&w<900)
-        document.getElementById("canvas").width = 460;
-    if(w>=900&&w<1200)
-        document.getElementById("canvas").width = 690;
-    if(w>1200)
-        document.getElementById("canvas").width = 920;
-}*/
 
 function adjustCountdownLength() {
     w = window.innerWidth;
