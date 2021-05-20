@@ -6,43 +6,11 @@ var countdownFactor = 1;
 
 var w = window.innerWidth;
             
-//drawPlayer(gamectx);
-/*drawStairs(gamectx);
-drawNotes(gamectx);*/
-
 adjustCountdownLength();
 drawCountdown(countdownctx, countnub);
 
-/*function drawPlayer(ctx) {
-    ctx.fillStyle = "#333";
-}*/
-/*
-function drawStairs(ctx) {
-    ctx.fillStyle = "#666";
-    for(var i=1; i<=12; i++) {
-        ctx.strokeRect((3*i-2)*10, 0, 20, 15);
-        if(i<=5) {
-            ctx.fillRect((3*i-2)*10, 0, 20, 15);
-        }
-    }
-}
-
-function drawNotes(ctx) {
-    ctx.fillStyle = "blue";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.font = "16px bold Arial";
-    for(var i=1; i<=12; i++) {
-        ctx.fillText("5", i*30-10, 8.5);
-    }
-}
-*/
 function drawCountdown(ctx, countnub1) {
     ctx.fillStyle = "#333";
-    //ctx.textAlign = "center";
-    //ctx.textBaseline = "middle";
-    //ctx.font = "40px bold Arial";
-    //ctx.fillText("Time:", 20, 46);
     ctx.strokeRect(0, 50, 227*countdownFactor, 20);
     ctx.fillRect(0, 50, countnub1*countdownFactor, 20);
 }
@@ -61,7 +29,6 @@ function adjustCountdownLength() {
         countdown.width = 230;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
-        //countdownctx.strokeRect(0, 50, 400, 20);
         drawCountdown(countdownctx,countnub);
     }
     if(w >= 600 && w < 900) {
@@ -70,7 +37,6 @@ function adjustCountdownLength() {
         countdown.width = 460;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
-        //countdownctx.strokeRect(0, 50, 400, 20);
         drawCountdown(countdownctx,countnub);
     }
     if(w >= 900 && w < 1200) {
@@ -79,7 +45,6 @@ function adjustCountdownLength() {
         countdown.width = 690;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
-        //countdownctx.strokeRect(0, 50, 400, 20);
         drawCountdown(countdownctx,countnub);
     }
     if(w >= 1200) {
@@ -88,7 +53,6 @@ function adjustCountdownLength() {
         countdown.width = 920;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
-        //countdownctx.strokeRect(0, 50, 400, 20);
         drawCountdown(countdownctx,countnub);
     }
 }

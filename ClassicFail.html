@@ -8,21 +8,27 @@
     <body>
         <audio src="./music/buttonsound.mp3" id="music" controls="controls" preload="preload" hidden> </audio>
         <div class="background">
-            <button onclick="window.location.href='Songlist.html'; document.getElementById('music').play()" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
-            <button onclick="retry(); document.getElementById('music').play()" class="button"  style="background-image: url(images/tryagain.png); float:right; margin-right: 10px; background-size:contain;"></button>
-            <div class="fail">You Fail</div>
-            <img src="images/failcry.png"  height="70%" >
-
-             <!-- new snowing effect -->
+            <!-- new snowing effect -->
             <div class="snow foreground"></div>
             <div class="snow foreground layered"></div>
             <div class="snow middleground"></div>
             <div class="snow middleground layered"></div>
             <div class="snow background"></div>
             <div class="snow background layered"></div>
+            
+            <button onclick="window.location.href='Songlist.html'; document.getElementById('music').play()" class="button" value="Go Back"   style=" background-image: url(images/back.png);background-size: contain;"></button>
+            <button onclick="retry(); document.getElementById('music').play()" class="button"  style="background-image: url(images/tryagain.png); float:right; margin-right: 10px; background-size:contain;"></button>
+            <!-- <div class="fail">You Fail</div> -->
+            <div class="fail"></div>
+            <img src="images/failcry.png"  height="40%" style="margin-top: -5%;" >
+            <img src="images/gameover.png"  height="30%" >
+
+             
         </div>
                 
         <script src="./js/playbgm.js"></script>  
         <script src="./js/ClassicFail.js"></script>
     </body>
 </html>
+
+
