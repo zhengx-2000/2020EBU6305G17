@@ -2,20 +2,20 @@ html,body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 .main {
     width: 100%;
     height: 100%;         
     background-image: url("../images/bg5.png");
-    /*background-size: 30%;*/
     background-repeat: repeat;
+
 }
 .control {
     width: 100%;
     height: 10%;
     margin: 10px;
-    /*width: 370px;
-    height: 32px;*/
+
 }
 .player {
     display: flex;
@@ -28,6 +28,8 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
+    line-height: 0px;
     background-color: blanchedalmond;
     width: 100%;
     height: 20%;
@@ -38,7 +40,7 @@ html,body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Arial";
+    font-family: "bold Arial";
     color: #cf2a27;
     font-size: 32px;
 
@@ -68,20 +70,57 @@ html,body {
 
 }
 .key {
-    /*background-color: #e7e7e7;
-    color: black;
-    padding: 50px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 10px;
-    cursor: pointer;*/
     float: left;
     cursor: pointer;
     width: 14.2%; 
     height: 41.2%;
+    font-family: fantasy;
+    font-size: 35px;
+    color:whitesmoke;
 }
+.path1 {
+    width: 15%;
+    height: 10%;
+    background-color: rgb(172, 252, 225);
+    float: left;
+    animation-name: changeSize;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.path2 {
+    width: 15%;
+    height: 10%;
+    float: left;
+    animation-name: changePosition;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+.path3 {
+    width: 0px;
+    height: 10%;
+    background-color: whitesmoke;
+    float: left;
+    animation-name: changeSize;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changePosition {
+    0% {background-color: rgb(255, 255, 255); left: 50px;}
+    100% {background-color: rgb(255, 255, 255); left: 60px}
+}
+
+
+@keyframes changeSize {
+    0% {width: 0%; background-color: rgb(172, 252, 225);}
+    100% {width: 15%; background-color: rgb(255, 255, 255);}
+}
+
 button:focus {
     outline: none;
 }

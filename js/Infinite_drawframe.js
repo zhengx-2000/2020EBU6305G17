@@ -1,18 +1,18 @@
-var game = document.getElementById("game");
-var gamectx = game.getContext("2d");
+//var game = document.getElementById("game");
+//var gamectx = game.getContext("2d");
 var countdown = document.getElementById("countdown");
 var countdownctx = countdown.getContext("2d");
             
-drawPlayer(gamectx);
-drawStairs(gamectx);
-drawNotes(gamectx);
+//drawPlayer(gamectx);
+/*drawStairs(gamectx);
+drawNotes(gamectx);*/
 
 drawCountdown(countdownctx);
 
-function drawPlayer(ctx) {
+/*function drawPlayer(ctx) {
     ctx.fillStyle = "#333";
-}
-
+}*/
+/*
 function drawStairs(ctx) {
     ctx.fillStyle = "#666";
     for(var i=1; i<=12; i++) {
@@ -32,13 +32,13 @@ function drawNotes(ctx) {
         ctx.fillText("5", i*30-10, 8.5);
     }
 }
-
+*/
 function drawCountdown(ctx,countnub1) {
     ctx.fillStyle = "#333";
     //ctx.textAlign = "center";
-    //ctx.textBaseline = "middle";
+    ctx.textBaseline = "middle";
     //ctx.font = "40px bold Arial";
     //ctx.fillText("Time:", 20, 46);
-    ctx.strokeRect(40, 62, 227, 10);
-    ctx.fillRect(40, 62, countnub1, 10);
+    ctx.strokeRect(70, 50, 227, 10);
+    ctx.fillRect(70, 50, countnub1, 10);
 }

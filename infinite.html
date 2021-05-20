@@ -18,7 +18,6 @@
             <img class="heart" id="heart1" src="./images/heart_full.png">
             <img class="heart" id="heart2" src="./images/heart_full.png">
             <img class="heart" id="heart3" src="./images/heart_full.png">
-            <button class="button" onclick="pause()" style="background: url(./images/pause.png); background-size: contain; margin-right: 10px;" id="pause"></button>
             <button class="button" onclick="window.location.href='FunctionSelect.html'" style="background: url(./images/home.png); background-size: contain; margin-right: 10px;" id="home"></button>
         </div>
 
@@ -26,14 +25,15 @@
             <img id="role" class="boy"  src="./images/player/1.png" height="100px" style="margin-right: 50px;">
         </div>
 
-        <canvas id="game" style="width:30%; height:10%"></canvas>
+        <canvas id="game" style="height: 60px;"></canvas>
+
+        <div class="path1"></div>
+        <div class="path2" style="margin-left: 5px;"></div>
+        <div class="path2" style="margin-left: 5px;"></div>
+        <div class="path3" style="margin-left: 5px;"></div>
 
         <div class="info">
-            <div class="title" id="middle">
-                <br />
-                ~~~Little Star~~~
-            </div>
-    
+            <div class="title" id="middle" style="margin-top: 40px;">~~~Little Star~~~</div>
             <canvas id="countdown" width="370" height="89"></canvas>
         </div>
         

@@ -8,6 +8,7 @@ var interval = 20;
 var progressBarlength = 221;
 var pass = 0;
 var record = progressBarlength*interval/time ;
+let t = null; // 存定时器
 
 /*drawStairs(gamectx);
 drawNotes(gamectx);*/
@@ -38,12 +39,12 @@ function drawCountdown(ctx) {
     ctx.fillStyle = "#333";
     //ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.font = "40px bold Arial";
+    ctx.font = "30px bold Arial";
     ctx.fillText("Time:", 20, 46);
     ctx.strokeRect(140, 32, 221, 27);
     // console.log(ctx);
     // ctx.fillRect(140, 32, total, 27);
-    setInterval(counter,interval);
+    t = setInterval(counter,interval);
 }
 
 function counter(){
@@ -62,4 +63,16 @@ function counter(){
 function reset() {
     progressBarlength = 221;
     counter();
+}
+// 暂停事件
+function pause() {
+    // 如果当前在倒计时则清空定时器暂停，否则继续倒计时
+    if (t) {
+        clearInterval(t);
+        t = null;
+        document.getElementById('middle').innerHTML = 'Paused';
+    } else {
+        drawCountdown(countdownctx);
+        document.getElementById('middle').innerHTML = '~~~Little Star~~~';
+    }
 }

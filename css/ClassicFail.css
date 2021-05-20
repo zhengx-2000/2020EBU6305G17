@@ -24,10 +24,11 @@ html,body {
     justify-content: center;
     text-align: justify;
     height: 14%;
-    margin: 10px;
-    font-size: 32px;
+    margin: 50px;
+    margin-right: 70px;
+    font-size: 50px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: fantasy;
     color: rgb(243, 97, 0);
 }
 .button {
