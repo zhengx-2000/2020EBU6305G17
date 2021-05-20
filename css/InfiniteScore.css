@@ -57,4 +57,5 @@ button{
     border-style: none;
     float: left;
     margin: auto;
+    cursor: pointer;
 }

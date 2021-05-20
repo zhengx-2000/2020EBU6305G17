@@ -38,4 +38,5 @@ html,body {
     border-style: none;
     margin: auto;
     float: left;
+    cursor: pointer;
 }
