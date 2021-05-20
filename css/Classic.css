@@ -89,6 +89,14 @@ html,body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+.keyposition{
+    float: left;
+    display: flex;
+    font-family: "bold Arial";
+    color: #cf2a27;
+    font-size: 32px;
+
+}
 
 @keyframes changePosition {
     0% {background-color: rgb(255, 255, 255); left: 50px;}

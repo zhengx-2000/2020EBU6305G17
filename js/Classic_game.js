@@ -1,6 +1,12 @@
 var currentNote = 0;
 var state = -1;//-1: initialize; 0: wrong key; 1: correct key; 2: game end(no more key)
 var songnum = window.location.href.split("=")[1];
+var songnumbget = 0;
+var lastnote = 0;
+var currentNote1 = 0;
+var currentNote2 = 0;
+var currentNote3 = 0;
+var currentNote4 = 0;
 if(songnum < 0 || songnum > 6) {
     alert("Not valid song number! Please try again!");
     window.location.href='Songlist.html';
@@ -10,6 +16,7 @@ var song = songList[parseInt(songnum)-1];
 
 document.getElementById("middle").innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
 document.onkeypress = keyboard;
+nextnumb();
 
 function keyboard(e) {
     var e = e || window.event;
@@ -25,6 +32,7 @@ function checkstate(state) {
             break;
         case 1:
             change();
+            nextnumb();
             counter();
             reset();
             break;
@@ -42,6 +50,7 @@ function checkstate(state) {
 function check(id) {
     if(id.toString() == song.charAt(currentNote)) {
         //alert("1 + " + current);
+        nextnumb();
         state = 1;
         currentNote = currentNote + 1;
         if(currentNote == song.length) {
@@ -53,4 +62,26 @@ function check(id) {
         //alert("0 + " + current);
         state = 0;
     }
+}
+function nextnumb(){
+    lastnote = currentNote + 2;
+    currentNote1 = currentNote + 1;
+    currentNote2 = currentNote1 + 1;
+    currentNote3 = currentNote2 + 1;
+    if (lastnote == song.length){
+        document.getElementById("keynumb4").innerHTML = ""
+    }
+    if(lastnote == song.length+1){
+        document.getElementById("keynumb3").innerHTML = ""
+    }
+    if(lastnote == song.length+2){
+        document.getElementById("keynumb2").innerHTML = ""
+    }
+    if(lastnote == song.length+3){
+        document.getElementById("keynumb1").innerHTML = ""
+    }
+    document.getElementById("keynumb1").innerHTML = song.charAt(currentNote)
+    document.getElementById("keynumb2").innerHTML = song.charAt(currentNote1)
+    document.getElementById("keynumb3").innerHTML = song.charAt(currentNote2)
+    document.getElementById("keynumb4").innerHTML = song.charAt(currentNote3)
 }
