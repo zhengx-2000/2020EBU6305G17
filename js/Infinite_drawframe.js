@@ -78,7 +78,7 @@ function adjustCountdownLength() {
     if(w < 600) {
         countdownFactor = 1;
         countdown = document.getElementById("countdown");
-        countdown.style.width = 230;
+        countdown.width = 230;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
         //countdownctx.strokeRect(0, 50, 400, 20);
@@ -87,7 +87,7 @@ function adjustCountdownLength() {
     if(w >= 600 && w < 900) {
         countdownFactor = 2;
         countdown = document.getElementById("countdown");
-        countdown.style.width = 460;
+        countdown.width = 460;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
         //countdownctx.strokeRect(0, 50, 400, 20);
@@ -96,7 +96,7 @@ function adjustCountdownLength() {
     if(w >= 900 && w < 1200) {
         countdownFactor = 3;
         countdown = document.getElementById("countdown");
-        countdown.style.width = 690;
+        countdown.width = 690;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
         //countdownctx.strokeRect(0, 50, 400, 20);
@@ -105,7 +105,7 @@ function adjustCountdownLength() {
     if(w >= 1200) {
         countdownFactor = 4;
         countdown = document.getElementById("countdown");
-        countdown.style.width = 920;
+        countdown.width = 920;
         countdownctx = countdown.getContext("2d");
         countdownctx.clearRect(0,0,countdown.width,countdown.height);
         //countdownctx.strokeRect(0, 50, 400, 20);
