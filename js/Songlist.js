@@ -36,6 +36,6 @@ function change(content){
 
 function classic() {
     console.log(songNum);
-    window.location.href = "classic.html?word=" + songNum;
+    window.location.href = "Classic.html?word=" + songNum;
 }
     

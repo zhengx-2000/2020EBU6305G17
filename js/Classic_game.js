@@ -2,7 +2,7 @@ var currentNote = 0;
 var state = -1;//-1: initialize; 0: wrong key; 1: correct key; 2: game end(no more key)
 var songnum = window.location.href.split("=")[1];
 var song = songList[parseInt(songnum)-1];
-alert(song);
+//alert(song);
 
 document.getElementById("middle").innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
 document.onkeypress = keyboard;

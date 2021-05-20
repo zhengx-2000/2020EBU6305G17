@@ -54,7 +54,7 @@ function counter(){
         progressBarlength = progressBarlength - record;
     }else{
         progressBarlength = 0;
-        window.location.href="ClassicFail.html" ; //时间结束到失败页面
+        window.location.href="ClassicFail.html?word=" + songnum ; //时间结束到失败页面
     }
     
 }
