@@ -1,6 +1,10 @@
 var currentNote = 0;
 var state = -1;//-1: initialize; 0: wrong key; 1: correct key; 2: game end(no more key)
 var songnum = window.location.href.split("=")[1];
+if(songnum < 0 || songnum > 6) {
+    alert("Not valid song number! Please try again!");
+    window.location.href='Songlist.html';
+}
 var song = songList[parseInt(songnum)-1];
 //alert(song);
 
