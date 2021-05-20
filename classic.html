@@ -15,16 +15,21 @@
     <div class="main">
         <div class="control" id="top">
             <button class="button" style="background: url(images/pause.png); background-size: contain; margin-right: 10px;" 
-                onclick="buttonPressed(this.id)" id="pause"></button>
+                onclick="pause()" id="pause"></button>
             <button class="button" style="background: url(images/home.png); background-size: contain; margin-right: 10px;" 
-                onclick="buttonPressed(this.id)" id="home"></button>
+                onclick="window.location.href='FunctionSelect.html'" id="home"></button>
         </div>
 
         <div class="player">
-            <img id="role" src="./images/player/1.png" height="100px" style="margin-right: 170px;">
+            <img id="role" src="./images/player/1.png" height="110px">
         </div>
 
-        <canvas id="game" style="width:100%; height:10%"></canvas>
+       <!--<canvas id="game" style="height: 60px;"></canvas>-->
+
+        <div class="path1"></div>
+        <div class="path2" id="start" style="margin-left: 5px;"></div>
+        <div class="path2" style="margin-left: 5px;"></div>
+        <div class="path3" style="margin-left: 5px;"></div>
 
         <div class="info">
             <div class="title" id="middle">

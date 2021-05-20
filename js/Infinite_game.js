@@ -7,6 +7,17 @@ var countnub = 0;
 var scorfinal = 0;
 var songnumbget = 0;
 infiniteSetup(currentSong);
+
+document.onkeypress = keyboard;
+
+function keyboard(e) {
+    var e = e || window.event;
+    if(e.keyCode >= 49 && e.keyCode <= 55) {
+        check(e.keyCode-48);
+        checkstate(state);
+    }
+}
+
 function infiniteSetup(id) {
     document.getElementById("middle").innerHTML = "~~~" + songNameList[id] + "~~~";
     song = songList[id];

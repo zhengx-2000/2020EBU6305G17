@@ -5,6 +5,15 @@ var song = songList[parseInt(songnum)-1];
 alert(song);
 
 document.getElementById("middle").innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
+document.onkeypress = keyboard;
+
+function keyboard(e) {
+    var e = e || window.event;
+    if(e.keyCode >= 49 && e.keyCode <= 55) {
+        check(e.keyCode-48);
+        checkstate(state);
+    }
+}
 
 function checkstate(state) {
     switch(state) {
@@ -17,7 +26,7 @@ function checkstate(state) {
             break;
         case 2:
             change();
-            alert("Game win!");
+            //alert("Game win!");
             currentNote = 0;
             state = -1;
             window.location.href='ClassicWin.html';
