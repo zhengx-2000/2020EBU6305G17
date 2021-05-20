@@ -119,19 +119,19 @@ function nextnumb(){
     currentNote2 = currentNote1 + 1;
     currentNote3 = currentNote2 + 1;
     if (lastnote == song.length){
-        document.getElementById("keynumb4").innerHTML = ""
+        document.getElementById("keynumb4").innerHTML = "";
     }
     if(lastnote == song.length+1){
-        document.getElementById("keynumb3").innerHTML = ""
+        document.getElementById("keynumb3").innerHTML = "";
     }
     if(lastnote == song.length+2){
-        document.getElementById("keynumb2").innerHTML = ""
+        document.getElementById("keynumb2").innerHTML = "";
     }
     if(lastnote == song.length+3){
-        document.getElementById("keynumb1").innerHTML = ""
+        document.getElementById("keynumb1").innerHTML = "";
     }
-    document.getElementById("keynumb1").innerHTML = song.charAt(currentNote)
-    document.getElementById("keynumb2").innerHTML = song.charAt(currentNote1)
-    document.getElementById("keynumb3").innerHTML = song.charAt(currentNote2)
-    document.getElementById("keynumb4").innerHTML = song.charAt(currentNote3)
+    document.getElementById("keynumb1").innerHTML = song.charAt(currentNote);
+    document.getElementById("keynumb2").innerHTML = song.charAt(currentNote1);
+    document.getElementById("keynumb3").innerHTML = song.charAt(currentNote2);
+    document.getElementById("keynumb4").innerHTML = song.charAt(currentNote3);
 }
