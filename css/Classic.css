@@ -66,19 +66,19 @@ html,body {
     background-color: rgb(172, 252, 225);
     float: left;
     animation-name: changeSize;
-    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
-
 }
 .path2 {
     width: 15%;
     height: 10%;
     float: left;
     animation-name: changePosition;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 0.3s;
+    animation-duration: 4s;
 
 }
 .path3 {
@@ -87,21 +87,20 @@ html,body {
     background-color: whitesmoke;
     float: left;
     animation-name: changeSize;
-    animation-duration: 0.3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    
-
+    animation-timing-function: linear;
 }
 
 @keyframes changePosition {
     0% {background-color: rgb(255, 255, 255); left: 50px;}
-    100% {background-color: rgb(172, 252, 225); left: 60px}
+    100% {background-color: rgb(255, 255, 255); left: 60px}
 }
 
 
 @keyframes changeSize {
-    0% {width: 0%; background-color: rgb(255, 255, 255);}
-    100% {width: 15%; background-color: rgb(172, 252, 225);}
+    0% {width: 0%; background-color: rgb(172, 252, 225);}
+    100% {width: 15%; background-color: rgb(255, 255, 255);}
 }
 
 button:focus {
