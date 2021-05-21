@@ -39,8 +39,8 @@ html,body {
     background-color: Transparent;
     width: 65px;
     height: 65px;
-    /* border: Transparent; */
-    /* border-style: none; */
+    border: Transparent; 
+    border-style: none;
     margin: auto;
     float: left;
     cursor: pointer;

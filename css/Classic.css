@@ -15,6 +15,7 @@ html,body {
     margin: 10px;
 }
 .player {
+    margin-right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,24 +60,27 @@ html,body {
     color:whitesmoke;
 }
 .path1 {
-    width: 15%;
+    width: 12%;
     height: 10%;
     background-color: rgb(172, 252, 225);
     float: left;
     animation-name: changeSize;
     animation-timing-function: ease-in-out;
-    animation-duration: 4s;
+    animation-duration: 0.3s;  
+    animation-play-state: paused;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
 .path2 {
-    width: 15%;
+    width: 12%;
     height: 10%;
     float: left;
+    background-color: rgb(172, 252, 225);
     animation-name: changePosition;
+    animation-play-state: paused;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
+    animation-duration: 0.3s;
 
 }
 .path3 {
@@ -85,17 +89,18 @@ html,body {
     background-color: whitesmoke;
     float: left;
     animation-name: changeSize;
-    animation-duration: 4s;
+    animation-play-state: paused;
+    animation-duration: 0.3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 .keyposition{
     float: left;
-    display: flex;
-    font-family: "bold Arial";
-    color: #cf2a27;
-    font-size: 32px;
-
+    font-family: fantasy;
+    color: rgb(255,255,204);
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @keyframes changePosition {

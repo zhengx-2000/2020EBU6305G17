@@ -56,3 +56,11 @@ function adjustCountdownLength() {
         drawCountdown(countdownctx,countnub);
     }
 }
+
+function pause() {
+    document.getElementById('path0').style.animationPlayState = 'paused';
+    document.getElementById('path1').style.animationPlayState = 'paused';
+    document.getElementById('path2').style.animationPlayState = 'paused';
+    document.getElementById('path3').style.animationPlayState = 'paused';
+    document.getElementById('path4').style.animationPlayState = 'paused';
+}

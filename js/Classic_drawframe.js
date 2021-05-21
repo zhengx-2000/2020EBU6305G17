@@ -10,30 +10,7 @@ var pass = 0;
 var record = progressBarlength*interval/time ;
 let t = null; // 存定时器
 
-/*drawStairs(gamectx);
-drawNotes(gamectx);*/
-
 drawCountdown(countdownctx);
-
-/*function drawStairs(ctx) {
-    ctx.fillStyle = "#666";
-    for(var i=1; i<=12; i++) {
-        ctx.strokeRect((3*i-2)*10, 0, 20, 15);
-        if(i<=5) {
-            ctx.fillRect((3*i-2)*10, 0, 20, 15);
-        }
-    }
-}
-
-function drawNotes(ctx) {
-    ctx.fillStyle = "blue";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.font = "16px bold Arial";
-    for(var i=1; i<=12; i++) {
-        ctx.fillText("5", i*30-10, 8.5);
-    }
-}*/
 
 function drawCountdown(ctx) {
     ctx.fillStyle = "#333";
@@ -71,9 +48,14 @@ function pause() {
         clearInterval(t);
         t = null;
         document.getElementById('middle').innerHTML = 'Paused';
-        document.getElementById('pause').style.backgroundImage = "url(./images/play.png)";
+        document.getElementById('path0').style.animationPlayState = 'paused';
+        document.getElementById('path1').style.animationPlayState = 'paused';
+        document.getElementById('path2').style.animationPlayState = 'paused';
+        document.getElementById('path3').style.animationPlayState = 'paused';
+        document.getElementById('path4').style.animationPlayState = 'paused';
     } else {
         drawCountdown(countdownctx);
+        document.getElementById('pause').style.backgroundImage = "url(./images/play.png)";
         document.getElementById('middle').innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
         document.getElementById('pause').style.backgroundImage = "url(./images/pause.png)";
     }

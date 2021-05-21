@@ -50,7 +50,7 @@ function checkstate(state) {
                 heartid = heartid - 1;
             }
             else {
-                alert("Game loss");
+                //alert("Game loss");
                 songnumbget = countnub*100/227;
                 if(songnumbget>0 && songnumbget<=20){
                     scorfinal=20;
@@ -64,7 +64,7 @@ function checkstate(state) {
                 if(songnumbget>80 && songnumberget<=100){
                     scorfinal=90;
                 }
-                window.location.href = "InfinitScore.html?score=" + scorfinal;
+                delayjump();
                 heartid = 3;
                 currentSong = 0;
             }
@@ -75,8 +75,10 @@ function checkstate(state) {
             change();
             break;
         case 2://game end
+            countnub = countnub + 1 ;
+            drawCountdown(countdownctx,countnub);
             change();
-            alert("Game compelete!");
+            //alert("Game compelete!");
             currentSong = currentSong + 1;
             if(currentSong < 7) {
                 currentNote = 0;
@@ -84,14 +86,13 @@ function checkstate(state) {
                 infiniteSetup(currentSong);
             }
             else {
-                alert("Game win!");
+                //alert("Game win!");
                 scorfinal = 100;
-                window.location.href = "InfinitScore.html?score=" + scorfinal;
+                delayjump();
                 currentSong = 0;
                 currentNote = 0;
                 state = -1;
             }
-            
             break;
         default:
             break;
@@ -134,4 +135,8 @@ function nextnumb(){
     document.getElementById("keynumb2").innerHTML = song.charAt(currentNote1);
     document.getElementById("keynumb3").innerHTML = song.charAt(currentNote2);
     document.getElementById("keynumb4").innerHTML = song.charAt(currentNote3);
+}
+function delayjump(){
+    setTimeout(function(){
+        window.location.href = "InfinitScore.html?score=" + scorfinal;},1000);
 }

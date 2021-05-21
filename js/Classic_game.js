@@ -22,19 +22,19 @@ function keyboard(e) {
     var e = e || window.event;
     if(e.keyCode >= 49 && e.keyCode <= 55) {
         if(e.keyCode == 49)
-            document.getElementById('do').play();
-        if(e.keyCode == 50)
-            document.getElementById('ri').play();
-        if(e.keyCode == 51)
-            document.getElementById('mi').play();
-        if(e.keyCode == 52)
-            document.getElementById('fa').play();
-        if(e.keyCode == 53)
-            document.getElementById('so').play();
-        if(e.keyCode == 54)
-            document.getElementById('la').play();
-        if(e.keyCode == 55)
-            document.getElementById('xi').play();
+        document.getElementById('do').play();
+    if(e.keyCode == 50)
+        document.getElementById('ri').play();
+    if(e.keyCode == 51)
+        document.getElementById('mi').play();
+    if(e.keyCode == 52)
+        document.getElementById('fa').play();
+    if(e.keyCode == 53)
+        document.getElementById('so').play();
+    if(e.keyCode == 54)
+        document.getElementById('la').play();
+    if(e.keyCode == 55)
+        document.getElementById('xi').play();
         check(e.keyCode-48);
         checkstate(state);
     }
@@ -55,7 +55,7 @@ function checkstate(state) {
             //alert("Game win!");
             currentNote = 0;
             state = -1;
-            window.location.href='ClassicWin.html';
+            delayjump();
             break;
         default:
             break;
@@ -98,4 +98,8 @@ function nextnumb(){
     document.getElementById("keynumb2").innerHTML = song.charAt(currentNote1)
     document.getElementById("keynumb3").innerHTML = song.charAt(currentNote2)
     document.getElementById("keynumb4").innerHTML = song.charAt(currentNote3)
+}
+function delayjump(){
+    setTimeout(function(){
+        window.location.href='ClassicWin.html';},1000);
 }

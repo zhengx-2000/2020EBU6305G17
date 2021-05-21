@@ -2,6 +2,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(-45deg,#23d5ab,#23a5d5ce, #f14ae4, #ffae18e1 );
+	background-size: 250% 250%;
+	-webkit-animation: gradient 10s ease infinite;
+	        animation: gradient 10s ease infinite;
 }
 
 html,body{
@@ -14,9 +18,11 @@ html,body{
 .background{
     width: 100%;
     height: 100%;
-    background-image: url("../images/bg2.jpg");
+    /* background-image: url("../images/bg2.jpg"); */
     background-repeat: repeat;
-    background-size: 500px;
+    /* background-size: 500px; */
+    background-size: 100%;
+
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 0, 85);
@@ -75,4 +81,28 @@ button{
 @keyframes moveup {
     0% {height: 0px;}
     100% {height: 100px;}
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

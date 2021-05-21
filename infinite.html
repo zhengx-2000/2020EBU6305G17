@@ -27,19 +27,19 @@
 
         <canvas id="game" style="height: 60px;"></canvas>
 
-        <div class="path1"></div>
-        <div class="path2" style="margin-left: 5px;"></div>
-        <div class="path2" style="margin-left: 5px;"></div>
-        <div class="path3" style="margin-left: 5px;"></div>
-        <div id="keynumb1"  class="keyposition" style="margin-right: 5px; width: 5%;"></div>
-        <div id="keynumb2"  class="keyposition" style="margin-right: 5px; width: 5%;"></div>
-        <div id="keynumb3"  class="keyposition" style="margin-right: 5px; width: 5%;"></div>
-        <div id="keynumb4"  class="keyposition" style="margin-right: 5px; width: 5%;"></div>
+        <div class="path1" id="path0"></div>
+       <div class="path2" style="margin-left: 5px;" id="path1"></div>
+       <div class="path2" style="margin-left: 5px;" id="path2"></div>
+       <div class="path2" style="margin-left: 5px;" id="path3"></div>
+       <div class="path3" style="margin-left: 5px;" id="path4"></div>
+        <div id="keynumb1"  class="keyposition" style="margin-left: 5%;"></div>
+        <div id="keynumb2"  class="keyposition" style="margin-left: 5%;"></div>
+        <div id="keynumb3"  class="keyposition" style="margin-left: 5%;"></div>
+        <div id="keynumb4"  class="keyposition" style="margin-left: 5%;"></div>
 
         <div class="info">
             <div class="title" id="middle" style="margin-top: 40px;">~~~Little Star~~~</div>
             <canvas class="count" id="countdown" width=690; height=89></canvas>
-            <!--<div id="countdown"></div>-->
         </div>
         
         <button class="key" id="1" style="background:url(images/key1.png); background-size:contain;" onclick="document.getElementById('do').play();check(this.id);checkstate(state)">1</button>
