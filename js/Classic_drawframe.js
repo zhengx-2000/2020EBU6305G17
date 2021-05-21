@@ -48,6 +48,7 @@ function pause() {
         clearInterval(t);
         t = null;
         document.getElementById('middle').innerHTML = 'Paused';
+        document.getElementById('pause').style.backgroundImage = "url(./images/play.png)";
         document.getElementById('path0').style.animationPlayState = 'paused';
         document.getElementById('path1').style.animationPlayState = 'paused';
         document.getElementById('path2').style.animationPlayState = 'paused';
@@ -55,7 +56,6 @@ function pause() {
         document.getElementById('path4').style.animationPlayState = 'paused';
     } else {
         drawCountdown(countdownctx);
-        document.getElementById('pause').style.backgroundImage = "url(./images/play.png)";
         document.getElementById('middle').innerHTML = "~~~" + songNameList[parseInt(songnum)-1] + "~~~";
         document.getElementById('pause').style.backgroundImage = "url(./images/pause.png)";
     }
