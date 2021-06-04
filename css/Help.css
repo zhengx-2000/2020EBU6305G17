@@ -1,0 +1,76 @@
+html,body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.main {
+    width: 100%;
+    height: 100%;         
+    background-image: url("../images/bg3.jpg");
+    background-repeat: repeat;
+}
+
+.topbar {
+    width: 100%;
+    height: 10%;
+}
+
+.text {
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color:deeppink;
+}
+
+.pic {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttombar {
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.rtn {
+    width: 65px;
+    height: 65px;
+    background-color: Transparent;
+    border: Transparent;
+    border-style: none;
+    float: right;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ctrl {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;   
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.ctrl:hover {background-color: #3e8e41}
+
+.ctrl:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
