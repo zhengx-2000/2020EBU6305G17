@@ -7,6 +7,7 @@ function count(i) {
                 break;
             else {
                 countnum--;
+                document.getElementById("title").innerHTML = "Help Page " + countnum + "/9";
                 document.getElementById("picture").src = "./images/help/" + countnum + ".png";
             }
             break;
@@ -15,6 +16,7 @@ function count(i) {
                 break;
             else {
                 countnum++;
+                document.getElementById("title").innerHTML = "Help Page " + countnum + "/9";
                 document.getElementById("picture").src = "./images/help/" + countnum + ".png";
             }
             break;
